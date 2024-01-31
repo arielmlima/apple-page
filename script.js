@@ -75,7 +75,7 @@ const rosaClaro = {
 
 //Agora vamos criar uma lista para os meus objetos la em cima do site apple:
 
-const opcoesCores = [verdeCipreste, meiaNoite, azulInverno, estelar, rosaClaro]
+const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro]
 //O mesmo para os tamanhos que vamos ter que alternar, declaramos com as duas opções. e para acessar elas, usamos indice 0 ou 1, quando for invocar.
 const opcoesTamanho = ['41 mm', '45 mm'];
 
@@ -136,9 +136,10 @@ function trocarCor() {
      miniaturaImagem1.src = './imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-1.jpeg';
      miniaturaImagem2.src = './imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-2.jpeg';
     //trocar imagem de visualização
-    //trocarImagem(); podiamos usar isso, mas buga a cor azul e a preta.
-    imagemVisualizacao.src = './imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-' + imagemSelecionada + '.jpeg';
-    //bug: desse jeito que ta fica dando bug tambem, so funciona mudança de cor na imagem principal depois que clica nas miniaturas
+    trocarImagem();
+
+    //imagemVisualizacao.src = './imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-' + imagemSelecionada + '.jpeg';
+    //bug: desse outro jeito fica dando bug, so funciona mudança de cor na imagem principal depois que clica nas miniaturas
     
 }
 
