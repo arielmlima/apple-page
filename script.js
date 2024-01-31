@@ -136,7 +136,10 @@ function trocarCor() {
      miniaturaImagem1.src = './imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-1.jpeg';
      miniaturaImagem2.src = './imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-2.jpeg';
     //trocar imagem de visualização
-    trocarImagem();
+    //trocarImagem(); podiamos usar isso, mas buga a cor azul e a preta.
+    imagemVisualizacao.src = './imagens/opcoes-cores/' + opcoesCores[corSelecionada].pasta + '/imagem-' + imagemSelecionada + '.jpeg';
+    //bug: desse jeito que ta fica dando bug tambem, so funciona mudança de cor na imagem principal depois que clica nas miniaturas
+    
 }
 
 
